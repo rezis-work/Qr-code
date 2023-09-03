@@ -1,0 +1,107 @@
+:root {
+  --main-bg-color: #d5e1ef;
+  --main-heading-color: #1f314f;
+  --p-color: #7d889e;
+
+  --spacing-16: 1.6rem;
+  --spacing-24: 2.4rem;
+
+  --main-border: 1rem;
+  --sec-border: 2rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* GENERAL STYLES */
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: var(--main-bg-color);
+  font-family: Outfit, sans-serif;
+}
+
+.container-spacer {
+  margin: 0 auto;
+}
+
+/* QR COMPONENT */
+
+.main-qr {
+  padding: 15.2rem 0 15.1rem;
+}
+
+.main-box {
+  width: 32rem;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  border-radius: var(--sec-border);
+  padding: var(--spacing-16) var(--spacing-16) 40px var(--spacing-16);
+  box-shadow: 0px 25px 25px 0px rgba(0, 0, 0, 0.05);
+}
+
+.qr-box {
+  background-color: #2c7dfa;
+  width: 28.8rem;
+  height: 28.8rem;
+  padding: 6.4rem;
+  border-radius: var(--main-border);
+  margin-bottom: var(--spacing-24);
+  position: relative;
+  overflow: hidden;
+}
+
+.qr-box img {
+  position: relative;
+  z-index: 99;
+}
+
+.bg-circle1,
+.bg-circle2 {
+  width: 328px;
+  height: 328px;
+  background: var(--blue-shade, #3685ff);
+  border-radius: 50%;
+}
+
+.bg-circle1 {
+  position: absolute;
+  top: -60%;
+  left: -50%;
+}
+
+.bg-circle2 {
+  position: absolute;
+  bottom: -80%;
+  right: -50%;
+}
+
+.qr-content {
+  text-align: center;
+  padding: 1rem;
+}
+
+.qr-content h1 {
+  margin-bottom: var(--spacing-16);
+  font-size: 2.2rem;
+  color: var(--main-heading-color);
+}
+
+.qr-content p {
+  font-size: 1.5rem;
+  letter-spacing: 0.18px;
+  color: var(--Grey, #7d889e);
+}
+
+@media (max-width: 62em) and (min-width: 23rem) {
+  .main-qr {
+    padding: 8.5rem 2.7rem 8.5rem 2.8rem;
+  }
+}
